@@ -1,0 +1,108 @@
+<!-- npx tailwindcss -i ./styles/input.css -o ./styles/style.css --watch  -->
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shoe store</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="dark:bg-[#262B3F] dark:text-white">
+    <div class="md:p-8">
+    <!-- desk Top header -->
+    <header class="flex justify-between items-center h-20 w-full">
+      <div>
+        <img src="./images/svg/nike-logo.svg" alt="" class="md:w-32 md:h-32 w-16 h-16" />
+      </div>
+      <div class="flex gap-4 md:gap-52">
+        <!-- nav bar links -->
+        <nav>
+          <ul class="flex gap-2 md:gap-6 md:text-xl">
+            <li><a href="#">products</a></li>
+            <li  class="hover:text-blue-200"><a href="login.html">Login</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">faqs</a></li>
+          </ul>
+        </nav>
+        <!-- dark btn    Cart-->
+        <div class="flex gap-4">
+          <div class="moonBTN">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+        </svg>
+      </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 md:mr-9"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+          />
+        </svg>
+      </div>
+      </div>
+    </header>
+
+    <main>
+          <!-- header img -->
+    <div class="w-full  h-80 md:h-full">
+      <img src="./images/header.jpg" alt="" class="h-full w-full" />
+    </div>
+    <!-- title -->
+    <h1 class="text-center text-xl md:text-4xl  font-bold m-16">Our Collection</h1>
+    <!-- products -->
+    <section class="product-container grid justify-center items-center grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-y-20 ">
+
+
+      
+    </section>
+  </div>
+    <!-- news letter -->
+    <section class="flex mb-16 flex-col justify-center gap-8 pb-11 bg-orange-600 mt-28 text-center font-bold h-48">
+      <h1 class="text-white md:text-3xl mt-8 text-2xl">subscribe to our newsletter</h1>
+      <div class="md:mr-14 m-auto w-[90%] flex md:flex-row flex-col justify-center gap-3" >
+        <input type="email" name="" id="" class="bg-white  md:inline md:w-[400px] h-10 rounded-lg">
+        <button class="bg-white h-10 md:w-28  rounded-lg">subscribe</button>
+      </div>
+    </section>
+  </main>
+  
+  <!-- footer -->
+  <footer class="flex justify-between md:w-[80%] m-auto md:text-xl mb-11 ">
+    <div > </div>
+    <div><img src="./images/svg/nike-logo.svg" alt="" class="md:w-44 md:h-44 h-20 w-20"></div>
+    <div>
+      <ul>
+       <li class="font-bold">about</li> 
+       <li>about us</li> 
+       <li>features</li> 
+       <li>blog</li> 
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li class="font-bold">connect</li> 
+        <li>linkedin</li> 
+        <li>facebook</li> 
+        <li>twitter</li> 
+        <li>instagram</li>
+       </ul>
+    </div>
+    <div>
+      <ul>
+        <li class="font-bold">Support</li> 
+        <li>FAQs</li> 
+        <li>support center</li> 
+        <li>contact us</li> 
+       </ul>
+    </div>
+  </footer>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

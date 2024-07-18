@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="flex flex-row relative">
+      <header class="pl-7 flex flex-col max-h-[760px] w-44 justify-between">
+        <div class="flex flex-col gap-12">
+          <img
+            src="./images/svg/nike-logo.svg"
+            alt=""
+            class="md:w-32 md:h-32 w-16 h-16"
+          />
+          <ul class="flex flex-col gap-5">
+            <li class="cursor-pointer">Dashboard</li>
+            <li class="cursor-pointer">Users</li>
+            <li class="cursor-pointer">Purchases</li>
+            <li class="cursor-pointer">Products</li>
+          </ul>
+        </div>
+        <div>
+
+          <h3 class="text-red-700 cursor-pointer font-bold">Log out</h3>
+        </div>
+      </header>
+
+      <main class="bg-slate-300 w-full p-10">
+        <h1
+          class="text-amber-500 bg-slate-100 text-center text-3xl py-5 rounded-lg"
+        >
+          Product information
+        </h1>
+        <div class="flex flex-row justify-between mt-10">
+          <h2 class="text-2xl font-bold">Purchases</h2>
+          <button class="open-modal bg-emerald-500 px-4 py-2 rounded-lg">
+            Add new Product
+          </button>
+        </div>
+        <section class="productDataContainer min-h-[400px] w-full bg-white mt-10 rounded-sm">
+          <div class="flex justify-around p-2">
+            <h3 class="w-40 text-center">Product Id</h3>
+            <h3 class="w-40 text-center">Product Name</h3>
+            <h3 class="w-40 text-center">Order Numbers</h3>
+            <h3 class="w-40 text-center">Product Price</h3>
+            <h3 class="w-40 text-center">Show details</h3>
+          </div>
+
+
+        </section>
+      </main>
+    </div>
+
+    <div class=" z-30 modal w-[60%] h-[550px] p-4  text-center bg-slate-400 flex flex-col absolute top-32 left-[21%] m-auto rounded-3xl hidden">
+      <div>
+      <h2>Add product</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" close-modal w-8 h-8 mb-3">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      </svg>
+    </div>
+      
+      <input type="text" placeholder="product Name" class="name-input h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="Product summary" class="h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="Price" class="price-input h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="sizes" class="h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="colors" class="h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="Image path" class="path-input h-11 mb-4 rounded-xl" />
+      <input type="number" name="" id="" placeholder="discount" class="h-11 mb-4 rounded-xl" />
+      <select name="" id="" class="h-11 mb-4 rounded-xl">
+        <option value="All">All</option>
+        <option value="Men">Men</option>
+        <option value="Women">Women</option>
+      </select>
+      <textarea name="" id="" cols="40" rows="10" class="h-24 mb-4 rounded-xl"></textarea>
+      <button class="subBTN bg-emerald-500 text-white rounded-xl py-3 hover:bg-emerald-900">Add Product</button>
+    </div>
+    <div class="z-90 back-drop fixed top-0 left-0 bg-black/50  w-full h-full hidden "></div>
+    
+
+    <div class=" z-30 editmodal w-[60%] h-[550px] p-4  text-center bg-slate-400 flex flex-col absolute top-32 left-[21%] m-auto rounded-3xl hidden">
+      <div>
+      <h2>Add product</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" close-edit-modal w-8 h-8 mb-3">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      </svg>
+    </div>
+      
+      <input type="text" placeholder="product Name" class="edit-name-input h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="Product summary" class="h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="Price" class="edit-price-input h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="sizes" class="h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="colors" class="h-11 mb-4 rounded-xl" />
+      <input type="text" placeholder="Image path" class="edit-path-input h-11 mb-4 rounded-xl" />
+      <input type="number" name="" id="" placeholder="discount" class="h-11 mb-4 rounded-xl" />
+      <select name="" id="" class="h-11 mb-4 rounded-xl">
+        <option value="All">All</option>
+        <option value="Men">Men</option>
+        <option value="Women">Women</option>
+      </select>
+      <textarea name="" id="" cols="40" rows="10" class="h-24 mb-4 rounded-xl"></textarea>
+      <button class="subEditBTN bg-emerald-500 text-white rounded-xl py-3 hover:bg-emerald-900">edit Product</button>
+    </div>
+    <div class="z-90 edit-back-drop fixed top-0 left-0 bg-black/50  w-full h-full hidden "></div>
+    <script src="scripts/panel.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "sadra",
+      "password": "123456789",
+      "admin": true
+    },
+    {
+      "id": "2",
+      "name": "ali",
+      "password": "246810",
+      "admin": true
+    },
+    {
+      "id": "3",
+      "name": "hosein",
+      "password": "13579",
+      "admin": false
+    },
+    {
+      "id": "3fc5",
+      "name": "mahmud",
+      "password": "fgfg",
+      "admin": false
+    }
+  ],
+  "products": [
+    {
+      "title": "nike2",
+      "price": "750",
+      "imageURL": "images/product3.jpg",
+      "views": 200,
+      "id": "d23f"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
